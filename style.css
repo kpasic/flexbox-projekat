@@ -9,6 +9,48 @@ html,body{
     padding: 0;
     margin: 0;
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.flex-r{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.flex-c{
+    display:flex;
+    flex-direction: column;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.h-fill{
+    height: 100%;
+}
+
+.img-aspect{
+    object-fit: contain;
+}
+.m-0{
+    margin: 0;
+}
+
+.stretch{
+    align-items: stretch;
+}
+
+.text-primary{
+    color: #fff;
+}
+
+.bg-main{
+    background-image: url("assets/background_maincap_2.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .container{
@@ -16,14 +58,14 @@ html,body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-image: url("colored_body_top.png");
+    background-image: url("assets/colored_body_top.png");
     background-size: cover;
     background-position: center;
 }
 
 .content{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     height: 100%;
 }
 .content > * {
@@ -40,12 +82,17 @@ html,body{
     display: flex;
     align-items: center;
     color: rgb(197, 195, 192);
-    font-family: Arial, Helvetica, sans-serif;
     margin-left: 20px;
-    font: bold;
 }
 .header img {
     max-height: 50px;
     width: auto;
     margin: 10px;
+}
+.side {
+    width: 15%;
+}
+
+.featured{
+    align-items: flex-start;
 }
