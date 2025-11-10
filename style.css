@@ -24,8 +24,27 @@ html,body{
     flex-direction: column;
 }
 
+.flex-1{
+  flex: 1;
+}
+
+.flex-left{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
 .w-60{
     width: 60%;
+    flex: 0 0 60%;
+}
+.w-80{
+  width: 80%;
+  flex: 0 0 80%;
+}
+.w-20{
+  width: 20%;
+  flex: 0 0 20%;
 }
 
 .h-fill{
@@ -45,6 +64,9 @@ html,body{
 
 .text-primary{
     color: #fff;
+}
+.text-light-100{
+  color: #c5c3c0;
 }
 
 .bg-main{
@@ -67,9 +89,6 @@ html,body{
     display: flex;
     flex-flow: row;
     height: 100%;
-}
-.content > * {
-    flex: 1 100%;       
 }
 
 .header {
@@ -95,4 +114,52 @@ html,body{
 
 .featured{
     align-items: flex-start;
+}
+
+.grid {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 16px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.game {
+  background: rgb(40, 47, 58);
+  border-radius: 8px;
+  overflow: hidden;
+  width: calc(20% - 16px);
+  min-width: 160px;
+  max-width: 320px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.game:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.game img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  display: block;
+}
+.game-title {
+  padding: 8px;
+  text-align: center;
+  font-size: 13px;
+  color: #c5c3c0;
+}
+
+.library-bar ul{
+  list-style: none;
+  padding: 0;
+}
+.library-bar li{
+  margin: 5px;
 }
