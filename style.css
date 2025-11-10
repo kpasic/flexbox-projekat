@@ -57,13 +57,17 @@ html,body{
     width: 60%;
     flex: 0 0 60%;
 }
+.w-70{
+  width: 70%;
+  flex: 0 0 70%;
+}
 .w-80{
   width: 80%;
   flex: 0 0 80%;
 }
-.w-70{
-  width: 70%;
-  flex: 0 0 70%;
+.w-90{
+  width: 90%;
+  flex: 0 0 90%;
 }
 
 .w-20{
@@ -235,4 +239,13 @@ html,body{
 }
 .library-bar li{
   margin: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: rgb(40,47,58);
+  border:none;
+  color: #fff;
 }
