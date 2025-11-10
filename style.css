@@ -86,7 +86,10 @@ html,body{
     object-fit: contain;
 }
 .m-0{
-    margin: 0;
+    margin: 0px;
+}
+.m-10{
+  margin: 10px;
 }
 .mt-0{
   margin-top: 0px;
@@ -115,11 +118,14 @@ html,body{
 }
 
 .stretch{
-    align-items: stretch;
+  align-items: stretch;
 }
 
 .text-primary{
   color: #fff;
+}
+.font-light{
+  font-weight: 100;
 }
 .text-light-100{
   color: #c5c3c0;
@@ -185,9 +191,6 @@ html,body{
     width: auto;
     margin: 10px;
 }
-.side {
-    width: 15%;
-}
 
 .featured{
     align-items: flex-start;
@@ -248,4 +251,17 @@ html,body{
   background-color: rgb(40,47,58);
   border:none;
   color: #fff;
+}
+.platform_img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+span.platform_img.win {
+    background-image: url("assets/icon_platform_win.svg");
 }
